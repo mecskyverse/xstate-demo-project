@@ -22,7 +22,6 @@
 
 .container {
   height: 75vh;
-  border: 2px solid red;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -33,7 +32,17 @@
 .frame-section {
   width: 80%;
   height: 100%;
-  border: 2px solid white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-element {
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
